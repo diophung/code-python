@@ -5,8 +5,8 @@
 def is_anagram_with_sorting(str_a, str_b):
     """
     check if 2 strings are anagrams
-    @str_a : the first string
-    @str_b : the second string
+    @params str_a : the first string
+    @params str_b : the second string
     """
     if str_a is None \
        or str_b is None:

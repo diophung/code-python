@@ -4,7 +4,7 @@ python:
 - "3.6"
 # dependencies
 install: "pip install -r requirements.txt"
-# script: pytest
+script: echo "finished"
 #
 # env :
 # - DJANGO_VERSION=1.7.8

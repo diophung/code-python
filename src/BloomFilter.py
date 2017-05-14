@@ -1,4 +1,4 @@
-import mmh3
+#import mmh3
 import random
 import bitarray
 import math
@@ -11,16 +11,16 @@ class BloomFilter():
         max_items:
             the maximum number of possible items in this filter
         false_positive_rate:
-            the expected error rate for positive set membership test
+            the expected error rate for positive set membership test, for e.g 0.99 = 99%
         """
-        num_of_bit = math.log2(max_items)
-        this.bit_array = bitarray()
-        this.hash_func = []
+        self.num_of_bit = math.log(max_items)
+        # self.bit_array = bitarray(self.num_of_bit)
+        self.hash_func = []
 
     def add(self, item):
         print('added')
 
-    def contains(self, item) -> bool:
+    def contains(self, item):
         """
         Check if this string is in the element
         """
@@ -28,10 +28,10 @@ class BloomFilter():
         print(rand)
 
 
-filter = BloomFilter()
+filter = BloomFilter(2, 0.99)
 filter.add('1')
 filter.add('1')
 filter.add('2')
 filter.add('11')
 filter.add('122')
-filter.test('1')
+filter.add('1')

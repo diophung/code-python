@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/diophung/code-python.svg?branch=master)](https://travis-ci.org/diophung/code-python)
+
 # What is it?
 - My coding practice in Python, practicing algorithm as well as learning NLP & ML.
 

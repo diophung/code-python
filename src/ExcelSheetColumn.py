@@ -1,4 +1,4 @@
-# Problem 168 : Excel Sheet Column title and vice versa
+# LeetCode #168 : Excel Sheet Column title and vice versa
 # Given a positive integer, return its corresponding column title as appear in
 # an Excel sheet.
 # For e.g:
@@ -66,7 +66,7 @@ class ExcelSheetColumn:
             power -= 1
         return int(column_index)
 
-
+"""
 sol = ExcelSheetColumn()
 print('1->' + str(sol.convert_to_title(1)))  # 1 = 26*0 + 1 = A
 print('26->' + str(sol.convert_to_title(26)))  # 26 = 26*0 + 26 = Z
@@ -83,3 +83,4 @@ print('AZ->' + str(sol.convert_to_index('AZ')))  # AZ = 1*26 + 26 = 52
 print('ZX->' + str(sol.convert_to_index('ZX')))  # ZX = 26*26 + 24 = 700
 print('AAA->' + str(sol.convert_to_index('AAA')))  # 1 * math.pow(26,2) + 1 * math.pow(26,2) + 1 = 703
 print('ZZZ->' + str(sol.convert_to_index('ZZZ')))  # ZZZ = 26 * math.pow(26,2) + 26 * math.pow(26,1) + 26= 18278
+"""

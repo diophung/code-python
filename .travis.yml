@@ -4,7 +4,7 @@ python:
 - "3.6"
 # dependencies
 install: "pip install -r requirements.txt"
-script: echo "finished"
+script: pytest tests/TestSuite.py
 #
 # env :
 # - DJANGO_VERSION=1.7.8

@@ -1,0 +1,6 @@
+# for Bloom filter
+bitarray
+# murmurhash for Bloom filter
+mmh3
+# natural language toolkit : sudo -H pip install -U nltk
+nltk

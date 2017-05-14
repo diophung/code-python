@@ -1,10 +1,10 @@
 language: python
 python:
-- "2.7"
+#- "2.7"
 - "3.6"
 # dependencies
 install: "pip install -r requirements.txt"
-script: pytest
+# script: pytest
 #
 # env :
 # - DJANGO_VERSION=1.7.8

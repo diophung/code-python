@@ -28,6 +28,11 @@ Could you do it in one-pass, using only O(1) extra memory and without modifying 
 
 class BattleshipInBoard:
     def Solve(self, board):
+        """
+        Given an 2D board, count how many battleships are in it.
+        :param @board: MxN matrix representing the water
+        :returns : count of the ships inside this board
+        """
         ship_count = 0
         for i in range(len(board)):
             for j in range(len(board[0])):
@@ -53,6 +58,7 @@ board = [
 ]
 
 sol = BattleshipInBoard()
+print(sol.Solve(board))
 print(sol.Solve(board))  # expect 2
 
 board = [

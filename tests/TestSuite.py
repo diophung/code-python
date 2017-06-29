@@ -1,12 +1,11 @@
 import unittest
 import sys
-# expose other modules at top level
+
 sys.path.append("..")
 from src.ExcelSheetColumn import ExcelSheetColumn
 
 
 class TestSuite(unittest.TestCase):
-
     def test_excel_column_converter(self):
         converter = ExcelSheetColumn()
         self.assertEqual(converter.convert_to_title(1), "A")

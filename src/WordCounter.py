@@ -47,7 +47,7 @@ def split_file(file_path):
 
 def split_list(list):
     # split a list into smaller chunks
-    for i in xrange(0, len(list), ITEMS_PER_SUBLIST):
+    for i in range(0, len(list), ITEMS_PER_SUBLIST):
         yield list[i: i + ITEMS_PER_SUBLIST]
 
 
@@ -80,7 +80,7 @@ def tuple_sort(a, b):
     elif a[1] > b[1]:
         return -1
     else:
-        return cmp(a[0], b[0])
+        return (a[0] > b[0]) - (a[0] < b[0])
 
 
 def run(fpath):
@@ -105,5 +105,5 @@ def run(fpath):
 
 
 # run(sys.argv[1])
-print('Analyzing Shakespeare''s works')
-run('./data/sp.txt')
+print('Analyzing Shakespeare''s works in parallel')
+run('../data/shakespeare_all.txt')

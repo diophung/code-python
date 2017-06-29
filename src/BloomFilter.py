@@ -1,21 +1,19 @@
-#import mmh3
+import mmh3
 import random
 import bitarray
 import math
 
 
 class BloomFilter():
-    def __init__(self, max_items, false_positive_rate):
+    def __init__(self, max_items, expected_false_positive_rate):
         """
         Initialize the Bloom filter
-        max_items:
-            the maximum number of possible items in this filter
-        false_positive_rate:
-            the expected error rate for positive set membership test, for e.g 0.99 = 99%
+        @max_items: the maximum number of possible items in this filter
+        @expected_false_positive_rate: "maybe in the list" error rate, 0.99 = 99%
         """
         self.num_of_bit = math.log(max_items)
         # self.bit_array = bitarray(self.num_of_bit)
-        self.hash_func = []
+        self.hash_func = []  # todo: add more hash-function to this
 
     def add(self, item):
         print('added')

@@ -77,7 +77,7 @@ class TreeNode():
 
 class BinaryTreeMultiOrder:
     @staticmethod
-    def pre_order(root: TreeNode):
+    def pre_order(root):
         path = []
         if root is not None:
             path.append(root.val)
@@ -89,7 +89,7 @@ class BinaryTreeMultiOrder:
         return path
 
     @staticmethod
-    def horizontal_order(root: TreeNode):
+    def horizontal_order(root):
         if root is None:
             return None
         nodesQueue = queue.Queue()
@@ -197,7 +197,7 @@ print()
 BinaryTreeMultiOrder.print_horizontal_order(arr)
 print()
 
-arr = [1,2,3,4,5,6,7,1,2,3,4,5,6,7,8]
+arr = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8]
 BinaryTreeMultiOrder.print_vertical_order(arr)
 print()
 BinaryTreeMultiOrder.print_horizontal_order(arr)

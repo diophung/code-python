@@ -1,23 +1,28 @@
-#import mmh3
 import random
 import bitarray
 import math
 
 
-class BloomFilter():
+class BloomFilter:
+    """
+    Guarantee not-in-the-list to be 100% correct. In-the-list maybe false positive.
+    Using multiple hash functions to mark the bit in the bit-array to indicate 
+    """
     def __init__(self, max_items, false_positive_rate):
         """
-        Initialize the Bloom filter
-        max_items:
-            the maximum number of possible items in this filter
-        false_positive_rate:
-            the expected error rate for positive set membership test, for e.g 0.99 = 99%
+        Create a Bloom filter
+        :param max_items: the maximum items to be used with this filter.
+        :param false_positive_rate: expected is-in-the-set false positive rate.
         """
+
         self.num_of_bit = math.log(max_items)
-        # self.bit_array = bitarray(self.num_of_bit)
+        self.bit_array = bitarray(self.num_of_bit)
+        self.false_positive_rate
         self.hash_func = []
 
     def add(self, item):
+        for h in hash_func:
+            h(item)
         print('added')
 
     def contains(self, item):
